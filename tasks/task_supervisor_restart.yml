@@ -1,0 +1,8 @@
+- fail:
+    msg: 'system_task_supervisor_job variable has to be set with --extra-vars "system_task_supervisor_job=puma-redmine"'
+  when: system_task_supervisor_job == ''
+
+- name: Restart supervisor job - {{ system_task_supervisor_job }}
+  supervisorctl:
+    name: '{{ system_task_supervisor_job }}'
+    state: restarted

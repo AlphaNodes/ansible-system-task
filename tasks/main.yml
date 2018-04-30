@@ -1,0 +1,11 @@
+- fail:
+    msg: 'system_task_name variable has to be set with --extra-vars "system_task_name=service_restart"'
+  when: system_task_name == ''
+
+- include_tasks: task_service_restart.yml
+  tags: system_task
+  when: system_task_name == 'service_restart'
+
+- include_tasks: task_supervisor_restart.yml
+  tags: system_task
+  when: system_task_name == 'supervisor_restart'

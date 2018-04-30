@@ -1,0 +1,10 @@
+system_task_name: ''
+
+# name of service, which should be restarted
+system_task_service_name: ''
+
+# use reload instead of restart for service restart
+system_task_service_reload: no
+
+# name of supervisor job, which should be restarted
+system_task_supervisor_job: ''
