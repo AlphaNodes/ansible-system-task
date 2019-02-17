@@ -1,4 +1,5 @@
-- fail:
+- name: Check if system_task_name is defined
+  fail:
     msg: 'system_task_name variable has to be set with --extra-vars "system_task_name=service_restart"'
   when: system_task_name == ''
 

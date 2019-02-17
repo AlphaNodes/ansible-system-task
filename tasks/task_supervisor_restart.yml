@@ -1,4 +1,5 @@
-- fail:
+- name: Check if system_task_supervisor_job is defined
+  fail:
     msg: 'system_task_supervisor_job variable has to be set with --extra-vars "system_task_supervisor_job=puma-redmine"'
   when: system_task_supervisor_job == ''
 

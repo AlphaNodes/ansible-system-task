@@ -1,4 +1,5 @@
-- fail:
+- name: Check if system_task_service_name is defined
+  fail:
     msg: 'system_task_service_name variable has to be set with --extra-vars "system_task_service_name=php7.0-fpm"'
   when: system_task_service_name == ''
 
