@@ -4,4 +4,5 @@
     system_task_name: service_restart
     system_task_service_name: ssh
   roles:
+    - alphanodes.ssh
     - role_under_test
