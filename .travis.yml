@@ -7,9 +7,7 @@ branches:
     - master
 
 env:
-  - distro: debian8
   - distro: debian9
-  - distro: ubuntu1604
   - distro: ubuntu1804
 
 script:

@@ -8,11 +8,9 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-      - xenial
       - bionic
     - name: Debian
       versions:
-      - jessie
       - stretch
   galaxy_tags:
     - services
