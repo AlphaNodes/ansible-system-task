@@ -9,3 +9,7 @@
 - include_tasks: task_supervisor_restart.yml
   tags: system_task
   when: system_task_name == 'supervisor_restart'
+
+- include_tasks: task_reboot.yml
+  tags: system_task
+  when: system_task_name == 'reboot'

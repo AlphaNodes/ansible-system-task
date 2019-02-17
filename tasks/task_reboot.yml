@@ -1,0 +1,6 @@
+- name: Restart Server in {{ system_task_reboot_delay }} seconds and wait for {{ system_task_reboot_timeout }} seconds for respond
+  reboot:
+    pre_reboot_delay: '{{ system_task_reboot_delay }}'
+    reboot_timeout: '{{ system_task_reboot_timeout }}'
+    msg: '{{ system_task_reboot_msg | default(omit) }}'
+  ignore_errors: true

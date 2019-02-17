@@ -1,5 +1,11 @@
 system_task_name: ''
 
+system_task_reboot_delay: 10
+
+system_task_reboot_timeout: 180
+
+# system_task_reboot_msg:
+
 # name of service, which should be restarted
 system_task_service_name: ''
 
