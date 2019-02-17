@@ -28,7 +28,7 @@ Available variables are listed below, along with default values (see `defaults/m
 system_task_name: ''
 ```
 
-`system_task_name` can be set to 'service_restart', 'supervisor_restart' or 'reboot'.
+`system_task_name` can be set to `service_restart`, `supervisor_restart` or `reboot`.
 
 
 ```
