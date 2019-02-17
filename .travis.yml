@@ -26,11 +26,11 @@ script:
   - ${PWD}/tests/test.sh
 
   # Check if ssh is available.
-  - 'docker exec --tty ${container_id} env TERM=xterm systemctl status cron.service'
+  - 'docker exec --tty ${container_id} env TERM=xterm systemctl status ssh.service'
 
 after_failure:
   # Check what happened on systemd systems.
-  - 'docker exec --tty ${container_id} env TERM=xterm systemctl -l status cron.service'
+  - 'docker exec --tty ${container_id} env TERM=xterm systemctl -l status ssh.service'
   - 'docker exec --tty ${container_id} env TERM=xterm journalctl -xe --no-pager'
 
 notifications:
