@@ -1,10 +1,10 @@
 # Ansible Role: system-task
 
-Run system tasks
+Run system tasks for restart services and reboot server
 
-- service_restart: restart system service
-- supervisor_restart: restart supervisor job
-- reboot: restart server
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-alphanodes.system-task-660198.svg)](https://galaxy.ansible.com/AlphaNodes/system-task)
+[![Build Status](https://travis-ci.org/AlphaNodes/ansible-system-task.svg?branch=master)](https://travis-ci.org/AlphaNodes/ansible-system-task)
+
 
 ## Dependencies
 
