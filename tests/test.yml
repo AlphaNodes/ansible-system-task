@@ -1,0 +1,7 @@
+---
+- hosts: all
+  vars:
+    system_task_name: service_restart
+    system_task_service_name: cron
+  roles:
+    - role_under_test
