@@ -4,6 +4,7 @@ Run system tasks
 
 - service_restart: restart system service
 - supervisor_restart: restart supervisor job
+- reboot: restart server
 
 ## Dependencies
 
@@ -73,13 +74,23 @@ system_task_supervisor_job: ''
 Name of supervisor job, which should be restarted.
 
 
-## Example Playbook
+## Example Playbook for restart service
 
 ```yaml
 - hosts: server-name
   vars:
     system_task_name: service_restart
     system_task_service_name: php7.0-fpm
+  roles:
+    - AlphaNodes.system-task
+```
+
+## Example Playbook for reboot
+
+```yaml
+- hosts: server-name
+  vars:
+    system_task_name: reboot
   roles:
     - AlphaNodes.system-task
 ```
