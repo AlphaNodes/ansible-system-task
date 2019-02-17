@@ -18,3 +18,5 @@ galaxy_info:
     - services
     - supervisor
     - systemd
+    - reboot
+    - restart
