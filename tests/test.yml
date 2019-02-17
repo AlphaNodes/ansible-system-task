@@ -2,6 +2,6 @@
 - hosts: all
   vars:
     system_task_name: service_restart
-    system_task_service_name: cron
+    system_task_service_name: ssh
   roles:
     - role_under_test
