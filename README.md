@@ -80,7 +80,7 @@ Name of supervisor job, which should be restarted.
 - hosts: server-name
   vars:
     system_task_name: service_restart
-    system_task_service_name: php7.0-fpm
+    system_task_service_name: php7.2-fpm
   roles:
     - AlphaNodes.system-task
 ```
