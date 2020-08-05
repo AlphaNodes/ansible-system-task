@@ -6,6 +6,7 @@
   loop: "{{ system_task_postgres_database_stats }}"
   loop_control:
     loop_var: database
+  when: not system_task_postgres_quiet
 
 - name: Run Postgres vacuumdb
   shell: vacuumdb {{ system_task_postgres_vacuum_options }}
@@ -15,4 +16,4 @@
 
 - name: Output of postgres_vacuumdb
   debug: var=postgres_vacuumdb.stdout_lines
-  when: postgres_vacuumdb.changed
+  when: not system_task_postgres_quiet and postgres_vacuumdb.changed

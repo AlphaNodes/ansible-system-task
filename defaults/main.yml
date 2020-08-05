@@ -15,6 +15,7 @@ system_task_service_reload: no
 # name of supervisor job, which should be restarted
 system_task_supervisor_job: ''
 
-system_task_postgres_vacuum_options: --all --analyze
 system_task_postgres_database_stats: []
 system_task_postgres_user: postgres
+system_task_postgres_quiet: no
+system_task_postgres_vacuum_options: --all --analyze' {{ ' --quiet' if system_task_postgres_quiet else '' }}'
